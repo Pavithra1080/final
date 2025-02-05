@@ -27,6 +27,8 @@ import Seal24 from '../Components/Seal/Seal24';
 import Seal25 from '../Components/Seal/Seal25';
 import Seal26 from '../Components/Seal/Seal26';
 import Seal27 from '../Components/Seal/Seal27';
+import Seal28 from '../Components/Seal/Seal28';
+import Seal29 from '../Components/Seal/Seal29';
 
 
 
