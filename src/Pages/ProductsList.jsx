@@ -29,7 +29,7 @@ import Seal26 from '../Components/Seal/Seal26';
 import Seal27 from '../Components/Seal/Seal27';
 import Seal28 from '../Components/Seal/Seal28';
 import Seal29 from '../Components/Seal/Seal29';
-
+import Seal30 from '../Components/Seal/Seal30';
 
 
 const Products = () => {

@@ -146,7 +146,7 @@ const PageContextProvider = (props) => {
         { name: "REJECT", price: 70, img: 26 },
         { name: "MANAGER", price: 70, img: 27 },
         { name: "MANAGER", price: 70, img: 28 },
-
+        { name: "MANAGER", price: 70, img: 29 }
 
 
     ]
