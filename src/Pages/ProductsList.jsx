@@ -27,9 +27,7 @@ import Seal24 from '../Components/Seal/Seal24';
 import Seal25 from '../Components/Seal/Seal25';
 import Seal26 from '../Components/Seal/Seal26';
 import Seal27 from '../Components/Seal/Seal27';
-import Seal28 from '../Components/Seal/Seal28';
-import Seal29 from '../Components/Seal/Seal29';
-import Seal30 from '../Components/Seal/Seal30';
+
 
 
 const Products = () => {
@@ -91,16 +89,16 @@ const Products = () => {
 
   return (
     <div className="px-6 mb-4 w-[90%]">
-      <h1 className="text-2xl font-bold mb-4 text-gray-800">Products</h1>
+      <h1 className="mb-4 text-2xl font-bold text-gray-800">Products</h1>
       <ul className="grid grid-cols-4 gap-5" style={{ rowGap: "2rem" }}>
         {products.map((product, index) => (
           <li
             key={index}
-            className="p-4 bg-white shadow-md rounded-lg flex flex-col"
+            className="flex flex-col p-4 bg-white rounded-lg shadow-md"
             style={{ height: "105%", justifyContent: "space-between" }}
           >
-            <div className='h-40 flex items-center justify-center'>
-              <div className="h-40 flex items-center justify-center" style={{
+            <div className='flex items-center justify-center h-40'>
+              <div className="flex items-center justify-center h-40" style={{
                 textAlign: "center",
                 transition: "transform 0.3s ease", // Smooth transition
                 transformOrigin: "center", // Zoom from center
@@ -128,11 +126,11 @@ const Products = () => {
                 Price: {currency}{product.price}
               </p>
             </div>
-            <div className="flex justify-between items-center mt-2">
+            <div className="flex items-center justify-between mt-2">
               <input type="number" className='border-2 border-black flex-shrink w-16 p-1.5 rounded-lg' value={qty[product.name] || ''} onChange={(e) =>
                 handleQtyChange(product.name, Math.max(1, Number(e.target.value)))
               } min="1" />
-              <button onClick={() => addToCart(product, qty)} className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
+              <button onClick={() => addToCart(product, qty)} className="px-4 py-2 text-white bg-blue-500 rounded-lg hover:bg-blue-600">
                 Add to Cart
               </button>
             </div>
